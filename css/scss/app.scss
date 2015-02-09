@@ -6,7 +6,9 @@ $dark-grey: #333333;
 $font-oswald: 'Oswald', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-openSans: 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $font-openSansCondensed: 'Open Sans Condensed', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+.small{
+	font-size: 0.75rem;
+}
 
 html, body{
 	-webkit-font-smoothing: antialiased;
@@ -42,6 +44,10 @@ body{
 
 
 // ------------- sections
+section.max{
+	max-width: 960px;
+	margin: 0 auto;
+}
 
 section.saveTheDate{
 	border-top: 1px solid #000;
@@ -53,6 +59,12 @@ section.saveTheDate{
 		font-size: 0.9rem;
 		margin: 0.5rem 0;
 	}
+	a{
+		color: $white;
+		&:hover, &:active, &:focus{
+			text-decoration: underline;
+		}
+	}
 }
 
 section.header{
@@ -60,16 +72,58 @@ section.header{
 		font-family: $font-oswald;
 		font-weight: 300;
 		text-transform: uppercase;
-		text-shadow: 2px 2px 4px #999;
+		// text-shadow: 2px 2px 4px #999;
 		text-align: center;
 		margin: 2rem 0;
 	}
 	.hero{
-		-webkit-box-shadow: inset 0px 3px 12px 0px rgba(50, 50, 50, 1);
-		-moz-box-shadow:    inset 0px 3px 12px 0px rgba(50, 50, 50, 1);
-		box-shadow:         inset 0px 3px 12px 0px rgba(50, 50, 50, 1);
+		-webkit-box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 4px 5px 0px rgba(50, 50, 50, 0.75);		
 		img{
 			width: 100%;
 		}
+	}
+}
+
+section.details{
+	margin-top: 2rem;
+	h2{
+		font-family: $font-oswald;
+		font-weight: 300;
+		&.tile{
+			text-align: center;
+			background-size: 3rem;
+			background-position: left center;
+			background-origin: content-box;
+			background-repeat: no-repeat;			
+			&:after{
+				content: "";
+				height: 1px;
+				background-color: #999;
+				width: 90%;
+				display: block;
+				margin: 1rem 0;
+			}
+		}
+		&.ceremony{
+			background-image: url('../images/icon-marriage.jpg');
+		}
+		&.toast{
+			background-image: url('../images/icon-toast.jpg');
+		}
+		&.party{
+			background-image: url('../images/icon-party.jpg');
+		}
+		&.hotels{
+			background-image: url('../images/icon-hotel.jpg');
+		}
+		&.parking{
+			background-image: url('../images/icon-parking.jpg');
+		}
+		&.drunkDriving{
+			background-image: url('../images/icon-drunkCar.jpg');
+		}		
+
 	}
 }
