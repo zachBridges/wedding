@@ -100,7 +100,15 @@ section.details{
 			background-size: 3rem;
 			background-position: left 0;
 			background-origin: content-box;
-			background-repeat: no-repeat;			
+			background-repeat: no-repeat;	
+			@media screen and (max-width: 880px) {
+				text-align: left;
+				background-position: 65% center;
+			}
+			@media screen and (max-width: 705px) {
+				text-align: center;
+				background-position: left 0 !important;
+			}
 			/*
 			&:after{
 				content: "";
@@ -114,6 +122,13 @@ section.details{
 		}
 		&.ceremony{
 			background-image: url('../images/icon-marriage.jpg');
+			@media screen and (max-width: 880px) {
+				background-position: 85% center;
+			}
+			@media screen and (max-width: 860px) {
+				background-position: right center;
+
+			}
 		}
 		&.toast{
 			background-image: url('../images/icon-toast.jpg');
@@ -210,14 +225,14 @@ section.other{
 }
 
 section.contact{
-	margin: 2rem 0;
+	margin: 2rem auto;
 	h2{
 		font-family: $font-oswald;
 		font-weight: 300;
 		&.tile{
 			text-align: left;
 			text-indent: 4rem;
-			background-size: contain;
+			background-size: 2rem;
 			background-position: left center;
 			background-origin: content-box;
 			background-repeat: no-repeat;

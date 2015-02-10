@@ -83,38 +83,56 @@ section.details h2.tile {
   	margin: 1rem 0;
   }
   */ }
-/* line 115, scss/app.scss */
+@media screen and (max-width: 880px) {
+  /* line 98, scss/app.scss */
+  section.details h2.tile {
+    text-align: left;
+    background-position: 65% center; } }
+@media screen and (max-width: 705px) {
+  /* line 98, scss/app.scss */
+  section.details h2.tile {
+    text-align: center;
+    background-position: left 0 !important; } }
+/* line 123, scss/app.scss */
 section.details h2.ceremony {
   background-image: url("../images/icon-marriage.jpg"); }
-/* line 118, scss/app.scss */
+@media screen and (max-width: 880px) {
+  /* line 123, scss/app.scss */
+  section.details h2.ceremony {
+    background-position: 85% center; } }
+@media screen and (max-width: 860px) {
+  /* line 123, scss/app.scss */
+  section.details h2.ceremony {
+    background-position: right center; } }
+/* line 133, scss/app.scss */
 section.details h2.toast {
   background-image: url("../images/icon-toast.jpg"); }
-/* line 121, scss/app.scss */
+/* line 136, scss/app.scss */
 section.details h2.party {
   background-image: url("../images/icon-party.jpg"); }
-/* line 127, scss/app.scss */
+/* line 142, scss/app.scss */
 section.details .lastChance {
   margin: 2rem 0;
   text-align: center; }
-/* line 130, scss/app.scss */
+/* line 145, scss/app.scss */
 section.details .lastChance:after, section.details .lastChance:before {
   height: 1px;
   width: 100%;
   background-color: #999;
   display: block;
   content: ""; }
-/* line 137, scss/app.scss */
+/* line 152, scss/app.scss */
 section.details .lastChance:after {
   margin-top: 2rem; }
-/* line 140, scss/app.scss */
+/* line 155, scss/app.scss */
 section.details .lastChance:before {
   margin-bottom: 1rem; }
-/* line 145, scss/app.scss */
+/* line 160, scss/app.scss */
 section.details p.dateTime {
   font-family: "Oswald", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.9rem; }
 
-/* line 152, scss/app.scss */
+/* line 167, scss/app.scss */
 section.other .head {
   margin: 1rem 0;
   background-image: url("../images/hero3.jpg");
@@ -123,18 +141,18 @@ section.other .head {
   background-position: center center;
   min-height: 18rem;
   position: relative; }
-/* line 160, scss/app.scss */
+/* line 175, scss/app.scss */
 section.other .head h2 {
   position: absolute;
   bottom: 1rem;
   left: 2rem;
   color: #ffffff;
   text-shadow: 2px 2px 0 #1f1f1f; }
-/* line 168, scss/app.scss */
+/* line 183, scss/app.scss */
 section.other h2 {
   font-family: "Oswald", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300; }
-/* line 172, scss/app.scss */
+/* line 187, scss/app.scss */
 section.other h2.tile {
   text-align: left;
   text-indent: 4rem;
@@ -152,36 +170,36 @@ section.other h2.tile {
   	margin: 1rem 0;
   }
   */ }
-/* line 190, scss/app.scss */
+/* line 205, scss/app.scss */
 section.other h2.hotels {
   background-image: url("../images/icon-hotel.jpg"); }
-/* line 193, scss/app.scss */
+/* line 208, scss/app.scss */
 section.other h2.parking {
   background-image: url("../images/icon-parking.jpg"); }
-/* line 196, scss/app.scss */
+/* line 211, scss/app.scss */
 section.other h2.drunkDriving {
   background-image: url("../images/icon-drunkCar.jpg"); }
-/* line 199, scss/app.scss */
+/* line 214, scss/app.scss */
 section.other h2.dress {
   background-image: url("../images/icon-dress.jpg");
   background-size: 2rem; }
 
-/* line 207, scss/app.scss */
+/* line 222, scss/app.scss */
 .fourPanel img {
   width: 100%; }
 
-/* line 212, scss/app.scss */
+/* line 227, scss/app.scss */
 section.contact {
-  margin: 2rem 0; }
-/* line 214, scss/app.scss */
+  margin: 2rem auto; }
+/* line 229, scss/app.scss */
 section.contact h2 {
   font-family: "Oswald", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300; }
-/* line 217, scss/app.scss */
+/* line 232, scss/app.scss */
 section.contact h2.tile {
   text-align: left;
   text-indent: 4rem;
-  background-size: contain;
+  background-size: 2rem;
   background-position: left center;
   background-origin: content-box;
   background-repeat: no-repeat;
