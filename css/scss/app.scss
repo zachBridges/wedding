@@ -44,6 +44,10 @@ body{
 
 
 // ------------- sections
+section{
+
+}
+
 section.max{
 	max-width: 960px;
 	margin: 0 auto;
@@ -94,9 +98,10 @@ section.details{
 		&.tile{
 			text-align: center;
 			background-size: 3rem;
-			background-position: left center;
+			background-position: left 0;
 			background-origin: content-box;
 			background-repeat: no-repeat;			
+			/*
 			&:after{
 				content: "";
 				height: 1px;
@@ -105,6 +110,7 @@ section.details{
 				display: block;
 				margin: 1rem 0;
 			}
+			*/
 		}
 		&.ceremony{
 			background-image: url('../images/icon-marriage.jpg');
@@ -115,6 +121,72 @@ section.details{
 		&.party{
 			background-image: url('../images/icon-party.jpg');
 		}
+	
+
+	}
+	.lastChance{
+		margin: 2rem 0;
+		text-align: center;
+		&:after, &:before{
+			height: 1px;
+			width: 100%;
+			background-color: #999;
+			display: block; 
+			content: "";
+		}
+		&:after{
+			margin-top: 2rem;
+		}
+		&:before{
+			margin-bottom: 1rem;
+		}
+
+	}
+	p.dateTime{
+		font-family: $font-oswald;
+		font-size: 0.9rem;
+	}
+}
+
+section.other{
+	.head{
+		margin: 1rem 0;
+		background-image: url('../images/hero3.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		min-height: 18rem;
+		position: relative;
+		h2{
+			position: absolute;
+			bottom: 1rem;
+			left: 2rem;
+			color: $white;
+			text-shadow: 2px 2px 0 #1f1f1f;
+		}
+	}			
+	h2{
+		font-family: $font-oswald;
+		font-weight: 300;
+
+		&.tile{
+			text-align: left;
+			text-indent: 4rem;
+			background-size: 3rem;
+			background-position: left center;
+			background-origin: content-box;
+			background-repeat: no-repeat;		
+			/*	
+			&:after{
+				content: "";
+				height: 1px;
+				background-color: #999;
+				width: 90%;
+				display: block;
+				margin: 1rem 0;
+			}
+			*/
+		}			
 		&.hotels{
 			background-image: url('../images/icon-hotel.jpg');
 		}
@@ -123,7 +195,34 @@ section.details{
 		}
 		&.drunkDriving{
 			background-image: url('../images/icon-drunkCar.jpg');
-		}		
+		}	
+		&.dress{
+			background-image: url('../images/icon-dress.jpg');
+			background-size: 2rem;
+		}
+	}
+}
 
+.fourPanel{
+	img{
+		width: 100%;
+	}
+}
+
+section.contact{
+	margin: 2rem 0;
+	h2{
+		font-family: $font-oswald;
+		font-weight: 300;
+		&.tile{
+			text-align: left;
+			text-indent: 4rem;
+			background-size: contain;
+			background-position: left center;
+			background-origin: content-box;
+			background-repeat: no-repeat;
+			background-image: url('../images/icon-contact.jpg');
+
+		}
 	}
 }
